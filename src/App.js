@@ -1,8 +1,7 @@
 import './App.scss';
 import { useState } from 'react';
-import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Article from './components/Article/Article';
+import Hero from './components/Hero/Hero';
 
 function App() {
   const [] = useState("");
@@ -10,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Article/>
-
-      <Footer/>
+      <Hero/>
     </div>
   );
 }
