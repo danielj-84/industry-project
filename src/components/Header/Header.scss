@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+
+    &__menu {
+        width: 1rem;        
+    }
+
+    &__logo {
+        width: 125px;
+    }
+
+    &__nav {
+        display: flex;
+        width: 64px;
+    }
+
+    &__icon {
+        width: 1rem;
+        padding-left: 1rem;
+    }
+}
