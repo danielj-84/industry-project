@@ -1,0 +1,157 @@
+@use "../src/styles/partials/typography";
+
+html {
+    font-size: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #FFF;
+  }
+
+.hero {
+    // background-image: url("../src/assets/images/sarain-banner-d.jpg");
+    // background-repeat: no-repeat;
+    // background-size:cover;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    &__img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        align-self: center;
+        filter: brightness(70%);
+    }
+
+    &__content {
+        z-index: 1;
+        position: absolute;
+        bottom: 32px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 1.8rem;
+        margin-block: 0;
+        text-align: right;
+        width: 240px;
+        padding-bottom: 8px;
+    }
+    &__text {
+        color: #fff;
+        width: 280px;
+        margin-block: 0;
+        text-align: right;
+    }
+}
+
+.morestories {
+    padding-inline: 1rem;
+
+    &__title {
+         
+
+    }
+
+    &__feed {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__avatar {
+        background-color: grey;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    &__label {
+        font-size: 14px;
+        margin: 0;
+        
+    }
+}
+
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    &__content {
+        // padding-bottom: 40px;
+    }
+    
+    &__title {
+        padding-inline: 1rem;
+        margin-top: 32px;
+    }
+
+    &__text {
+        overflow-y: hidden;
+        height: 200px;
+        padding-inline: 1rem;
+    }
+
+    &__text--expanded {
+        height: fit-content;
+        padding-inline: 1rem;
+    }
+
+    &__button {
+        margin-bottom: 32px;
+        width: 100%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &__title {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}

@@ -1,9 +1,77 @@
-@font-face {
-    font-family: Didot;
-    src: url("../../../src/assets/fonts/DidotLH-Roman.otf") format("opentype");
-}
+// @font-face {
+//     font-family: Didot;
+//     src: url("../../../src/assets/fonts/DidotLH-Roman.otf") format("opentype");
+// }
 
 @font-face {
-    font-family: NeueHass;
-    src: url("../../../src/assets/fonts/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+    font-family: "NHaas Regular";
+    src: url("../../assets/fonts/NHaasGroteskTXPro-55Rg.ttf")
+      format("truetype");
+    font-weight: 400; // Regular
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NHaas Medium";
+    src: url("../../assets/fonts/NHaasGroteskTXPro-65Md.ttf")
+      format("truetype");
+    font-weight: 500; // Medium
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NHaas Bold";
+    src: url("../../assets/fonts/NHaasGroteskTXPro-75Bd.ttf")
+      format("truetype");
+    font-weight: 700; // Bold
+    font-style: normal;
+  }
+
+h1 {
+    font-family: "NHaas Regular", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400; // Regular 
+}
+
+h2 {
+    font-family: "NHaas Medium", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500; // Regular 
+}
+
+p {
+    font-family: "NHaas Regular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400; // Regular 
+}
+
+label {
+    font-family: "NHaas Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400; // Regular 
+}
+
+button {
+    @extend p;
+
+    &:hover {
+    text-decoration: underline;
+    }
+}
+
+.hero__title {
+    @extend h1;
+    font-weight: 700;
+}
+
+
+.hero__text {
+    @extend p;
+
+    font-size: 14px;
+    line-height: 20px;
 }

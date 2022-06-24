@@ -28,4 +28,14 @@
         width: 70%;
         margin-block: 0;
     }
+
+    &__profiles {
+        display: flex;
+    }
+
+    &__person {
+        width: 50%;
+        height: 20px;
+        
+    }
 }
